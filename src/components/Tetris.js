@@ -1,11 +1,10 @@
-import "./tetris.css";
+import "./Tetris.css";
+import Board from "./board.js";
 
-import Board from "./board.jss";
-
-import { useBoard } from "/src/hooks/useBoard";
+import { useBoard } from "../business/Board";
 
 const Tetris = ({ rows, columns, setGameOver }) => {
-    const [board, setBoard] = setBoard();
+    const [board, setBoard] = useBoard({rows, columns});
 
     return <Board board={board}/>
 };

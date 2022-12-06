@@ -1,8 +1,8 @@
-import { defaultCell } from "/src/business/Cell"
+import { defaultCell } from "/src/business/"
 
 export const buildBoard = ({ rows, columns }) => {
     const builtRows = Array.from({ length: rows}, () =>
-    Array.from(( length:columns ), () => ({ ...defaultCell }))
+    Array.from({ length: columns }, () => ({ ...defaultCell }))
     );
 
     return {
