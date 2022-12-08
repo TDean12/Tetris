@@ -1,20 +1,22 @@
-const Board = ({board}) => {
-    console.log('board', board);
+import "./Board.css";
 
-    const boardStyles = {
-        gridTemplateRows:  `repeat(${board.size.rows}, 1fr)`,
-        gridTemplateColumns: `repeat(${board.size.columns}, 1fr)`
-    }
+import BoardCell from "/src/components/BoardCell";
 
-    return(
-        <div className="Board" style={boardStyles}>
-            {board.rows.map((row, y ) => 
-               row.map((cell, x) => (
-                <BoarCell key={x * board.size.columns+ x} cell= {cell} />
-               ))
-            )}
-        </div>
-    )
-}
+const Board = ({ board }) => {
+  const boardStyles = {
+    gridTemplateRows: `repeat(${board.size.rows}, 1fr)`,
+    gridTemplateColumns: `repeat(${board.size.columns}, 1fr)`
+  };
 
-export default board;
+  return (
+    <div className="Board" style={boardStyles}>
+      {board.rows.map((row, y) =>
+        row.map((cell, x) => (
+          <BoardCell key={x * board.size.columns + x} cell={cell} />
+        ))
+      )}
+    </div>
+  );
+};
+
+export default Board;
