@@ -1,4 +1,5 @@
 .Tetris {
-    position: relative;
-  }
-  
+  position: relative;
+  background-color: aliceblue;
+  color: black;
+}

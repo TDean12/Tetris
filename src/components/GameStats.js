@@ -10,9 +10,9 @@ const GameStats = ({ gameStats }) => {
     <ul className="GameStats GameStats__right">
       <li>Level</li>
       <li className="value">{level}</li>
-      <li>Lines to level</li>
+      <li>2level</li>
       <li className="value">{linesToLevel}</li>
-      <li>Points</li>
+      <li>Point</li>
       <li className="value">{points}</li>
     </ul>
   );

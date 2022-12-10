@@ -2,7 +2,7 @@
     position: absolute;
     width: 22vw;
     list-style-type: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: black;
   }
   
   .GameStats__left {
@@ -20,6 +20,6 @@
   .GameStats .value {
     font-size: 2.8rem;
     margin-bottom: 0.5em;
-    color: rgba(255, 255, 255, 1);
+    color: black;
   }
   
